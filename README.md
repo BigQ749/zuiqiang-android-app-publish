@@ -1,31 +1,8 @@
-# 最强安卓 APP 上架
+# 最强安卓 APP 上架 Skill
 
-把鸿蒙 / H5 工具类 APP 打成可上架的安卓 APK，按 WebView 壳必过清单修好启动闪退、系统栏、下载分享选文件等坑，再推进华为 AGC 等国内安卓店上传提审。
+用于 Android 应用生成/升级、审核返工、真实隐私与商店素材、中文安装包上传和草稿核对。入口 [SKILL.md](SKILL.md)，界面名称为“最强安卓 APP 上架 Skill”。
 
-对应本地 Grok Bot skill：[最强安卓APP上架](sand-workflow:app)（仓库内以 `SKILL.md` 为准）。
+安装时把本仓库作为目录 zuiqiang-android-app-publish 放进支持技能的客户端技能目录。调用 $zuiqiang-android-app-publish 并给出产品、源代码/现有包、目标商店及允许做到的步骤。
 
-## 装到 Cursor
+详细流程和脱敏返工记录位于 references/。不包含签名材料、账号、调试会话或用户数据，不承诺审核通过；默认遵守用户“保存草稿、不提审”的停止点。
 
-把本仓库放到：
-
-`C:\Users\齐赛军\.cursor\skills\最强安卓APP上架`
-
-或克隆：
-
-```bash
-gh repo clone BigQ749/zuiqiang-android-app-publish "%USERPROFILE%\.cursor\skills\最强安卓APP上架"
-```
-
-## 里面有什么
-
-| 文件 | 干什么 |
-|---|---|
-| SKILL.md | 接到安卓上架任务后怎么做：硬约定、流水线、WebView 必过清单、驳回处置 |
-
-## 硬约定摘要
-
-- 安装包桌面命名：`{中文应用名}.apk`，不加「安卓」，不用拼音主名
-- HAP 不能当 APK；安卓须自备 HTTPS 隐私页（华为隐私托管只管鸿蒙）
-- 全权推进时修完即上传，不以「请用户侧载」为默认卡点
-
-口令与 keystore 不在这个仓库里。

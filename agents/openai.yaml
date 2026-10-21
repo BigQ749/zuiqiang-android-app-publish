@@ -1,0 +1,5 @@
+interface:
+  display_name: "最强安卓 APP 上架 Skill"
+  short_description: "生成升级安卓应用，处理审核返工，核对真实隐私和素材并上传保存草稿"
+  default_prompt: "使用 $zuiqiang-android-app-publish 完成 Android 应用升级和上架材料，按我的授权保存或提审。"
+
